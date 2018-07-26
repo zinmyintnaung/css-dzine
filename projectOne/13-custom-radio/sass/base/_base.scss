@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /* Refer body css */
+}
+
+/* To use rem instead of px, if we define 10px is equals to 1rem, i.e. all px values divide by 10 */
+html{
+    /* font-size: 10px; 
+        => To convert to % for rem implementation:-
+        10/16 = 0.625 (10 here is our defined pixel, 16 here is browser default pixel
+        Thus, we have to put 62.5%
+    */
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+}
